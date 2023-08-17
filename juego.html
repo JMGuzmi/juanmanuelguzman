@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/imagenes/logo.png" >
+    <title>Proyecto-Final</title>
+</head>
+<body class="body">
+    <!-- Barra de navegación -->
+    <nav>
+        <a href="./index.html">
+            <!-- Logo -->
+            <svg width="300" height="70">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+        </a>
+        <ul class="menu">
+            <li class="item"><a class="link" href="./historia.html">HISTORIA</a></li>
+            <li class="item"><a class="link" href="./juego.html">JUGUEMOS</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header>
+        <h1 class="titulo"> JUGUEMOS UN POCO</h1> 
+    </header>
+
+    <main>
+        <h2>Armemos el rompecabezas y veamos qué imagen es...</h2>
+
+        <!-- Sección del juego -->
+        <section class="juego">
+            <div class="cajas">
+                <!-- Cajas de arrastre y suelta -->
+                <div class="cajitas" id="suelto">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="cajitas" id="suelto1">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+                <div class="cajitas" id="suelto2">
+                    <p>Arrastre y suelte la imagen aquí</p>
+                </div>
+            </div>
+
+            <!-- Contenedor de imágenes -->
+            <div id="cajaimagenes">
+                <img id="imagen" src="./assets/imagenes/rompe2.png" alt="imagen-rompecabezas" />
+                <img id="imagen1" src="./assets/imagenes/Rompe1.png" alt="imagen-rompecabezas" />
+                <img id="imagen2" src="./assets/imagenes/Rompe3.png" alt="imagen-rompecabezas" />
+            </div>
+        </section>
+
+        <!-- Botón de reinicio -->
+        <button onclick="reinicio()" class="botonesVideo reinicio">Reiniciar</button>
+
+    </main>
+    <script src="./juegojs.js"></script>
+</body>
+</html>

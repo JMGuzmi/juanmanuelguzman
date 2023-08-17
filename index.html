@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> 
+    <link rel="icon" href="./assets/imagenes/logo.png">
+    <title>Proyecto-Final</title>
+</head>
+<body class="body">
+    <nav>
+        <!-- Enlace con logotipo SVG -->
+        <a href="./index.html">
+            <svg width="300" height="70">
+                <!-- Rectángulo del logotipo -->
+                <rect x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
+                <rect x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
+                <!-- Triángulo del logotipo -->
+                <polygon points="55 45, 95 45, 115 62, 30 62" fill="#F0E9D2" id="tec1"></polygon>
+                <polygon points="57 48, 92 48, 104 58, 43 58" fill="#495579" id="tec2"></polygon>
+            </svg>
+        </a>
+    
+        <!-- Lista de elementos de menú -->
+        <ul class="menu">
+            <!-- Elemento de menú "HISTORIA" -->
+            <li class="item">
+                <a class="link" href="./historia.html">HISTORIA</a>
+            </li>
+            <!-- Elemento de menú "JUGUEMOS" -->
+            <li class="item">
+                <a class="link" href="./juego.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <header>
+        <h1 class="titulo">PROGRAMACION E HISTORIA</h1> <!-- Título principal -->
+    </header>
+
+    <h2>CONTENIDO</h2> <!-- Título de sección -->
+
+    <section class="main">
+        <!-- Tarjeta de categoría -->
+        <div class="tarjeta">
+            <img class="imagen-tarjeta" src="./assets/imagenes/img1.jpg" alt="imagen=producto"> <!-- Imagen de la tarjeta -->
+            <p class="fotito">Conozcamos un poco <br> sobre la historia de la programacion </p> <!-- Texto de descripción -->
+            <a class="botoncito" href="./historia.html" >Ir a Historia</a> <!-- Enlace para ir a la página de historia -->
+        </div>
+
+        <!-- Tarjeta de categoría -->
+        <div class="tarjeta">
+            <img class="imagen-tarjeta" src="./assets/imagenes/img2.jpg" alt="imagen=producto"> <!-- Imagen de la tarjeta -->
+            <p class="fotito">Juguemos un poco sobre la computacion</p> <!-- Texto de descripción -->
+            <a class="botoncito" href="./juego.html" >Ir a juego</a> <!-- Enlace para ir a la página de juego -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">
+            <img class="logo" src="./assets/imagenes/logo.png" alt="logo "> <!-- Logo del sitio web -->
+            <h3 class="titulo titulo2">PROGRAMACION <br> E <br> HISTORIA </h3> <!-- Título del footer -->
+        </div>
+        <div>Sitio con fines educativos - Creado por M.Victoria Lopez</div> <!-- Información adicional del footer -->
+    </footer>
+
+    <script src="./script.js"></script> 
+</body>
+</html>
